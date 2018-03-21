@@ -55,7 +55,17 @@ A modo de prueba, verificar que los siguientes servicios retornen datos de los c
  - **[http://localhost:7000/api/v1/details/gob.paraguay](http://localhost:7000/api/v1/details/gob.paraguay)**
  - **[http://localhost:7000/api/v1/extended/gob.paraguay](http://localhost:7000/api/v1/extended/gob.paraguay)**
 
-# Añadir más campaigns
+## Actualización de datos
+Los siguientes comandos deben correrse cada día para mantener los datos actualizados, por lo que podría programarse en una tarea usando CRON. Tener en cuenta los valores de los flags *--campaign* (campaign a analizar), *amount* (cantidad de sitios a analizar) y *concurrency* cuando sea necesario. 	
+
+    TZ=UTC DEBUG=* bin/queueMany.js 
+    TZ=UTC amount=6 concurrency=3 npm run badger
+    TZ=UTC amount=6 concurrency=3 npm run phantom
+    TZ=UTC config=config/analyzerDevelopment.json DEBUG=* bin/analyzeBadger.js --campaign gob.paraguay
+    TZ=UTC config=config/analyzerDevelopment.json DEBUG=* bin/analyzePhantom.js --campaign gob.paraguay
+    TZ=UTC config=config/analyzerDevelopment.json DEBUG=* bin/analyzeGroup.js --campaign gob.paraguay
+
+## Añadir más campaigns
 En caso de que se hayan agregado nuevos campaigns al proyecto https://github.com/TEDICpy/gobwebsecpy, se debe modificar el archivo *config/campaigns.json* para incluirlos.
 
     "gob": [
