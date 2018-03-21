@@ -8,7 +8,7 @@
 ## Pasos previos
 -   Deben ejecutarse los 3 scripts que están en la carpeta *badger-scripts* del proyecto estos scripts deben ejecutarse desde la carpeta raíz (**no** desde dentro de *badger-scripts*)
 
--   Hacer clone del proyecto https://github.com/TEDICpy/gobwebsecpy en la carpeta *campaigns* del proyecto invi.sible.link
+-   Hacer clone del proyecto https://github.com/TEDICpy/gobwebsecpy en la carpeta *campaigns* del proyecto invi.sible.link. Para configurar los campaigns a mostrar en invi.sible.link consultar la última sección de este documento: "**Añadir más campaigns**"
 ## Deploy
 
 A continuación se describen los pasos para cargar los datos de campaigns y publicarlos a través de la api rest de storyteller.
@@ -17,6 +17,11 @@ A continuación se describen los pasos para cargar los datos de campaigns y publ
 
   
     DEBUG=* node bin/queueCampaign --csv campaigns/gobwebsecpy/lista_paraguay.csv --campaign gob.paraguay
+
+> Otra **alternativa** podría ser la siguiente:
+> 
+>     TZ=UTC DEBUG=* bin/queueMany.js 
+> De este modo se podría evitar ejecutar *bin/queueCampaign* por cada campaign, debido a que *bin/queueMany.js* obtiene los datos de los campaigns consultando al archivo *config/campaigns.json* .
 
 Por último, dejar corriendo **vigile** en esta terminal
 
