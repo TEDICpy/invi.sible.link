@@ -9,6 +9,10 @@
 
 -   Hacer clone del proyecto https://github.com/TEDICpy/gobwebsecpy en la carpeta *campaigns* del proyecto invi.sible.link. Para configurar los campaigns a mostrar en invi.sible.link consultar la última sección de este documento: "**Añadir más campaigns**"
 
+## Instalación
+
+`npm install`
+
 ## Deploy
 
 A continuación se describen los pasos para cargar los datos de campaigns y publicarlos a través de la api rest de storyteller.
