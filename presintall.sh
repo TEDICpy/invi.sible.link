@@ -25,6 +25,7 @@ sudo add-apt-repository universe
 
 # Install packages
 sudo apt-get update
+sudo apt-get install -y mongo
 sudo apt-get install -y make zip # pb needs these
 sudo apt-get install -y python-pip
 sudo apt-get install -y xvfb unzip
