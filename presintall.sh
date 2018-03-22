@@ -23,8 +23,11 @@ fi
 # Add universe ubuntu repo
 sudo add-apt-repository universe
 
+# Add node repo
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 # Install packages
 sudo apt-get update
+sudo apt-get install -y nodejs
 sudo apt-get install -y mongo
 sudo apt-get install -y make zip # pb needs these
 sudo apt-get install -y python-pip
