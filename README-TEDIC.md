@@ -1,14 +1,14 @@
 # Deploy invi.sible.link
 
-## Prerrequisitos
--   Tener **mongodb** instalado y corriendo en el sistema.
--   Tener **Chrome** versión >= 64.
--   Tener **ChromeDriver** instalado en el sistema ([https://chromedriver.storage.googleapis.com/index.html?path=2.35/](https://chromedriver.storage.googleapis.com/index.html?path=2.35/), en linux debe estar ubicado en */usr/bin/chromedriver*).
-
 ## Pasos previos
--   Deben ejecutarse los 3 scripts que están en la carpeta *badger-scripts* del proyecto estos scripts deben ejecutarse desde la carpeta raíz (**no** desde dentro de *badger-scripts*)
+-   Ejecutar el script presintall
+
+```bash
+./preinstall.sh
+```
 
 -   Hacer clone del proyecto https://github.com/TEDICpy/gobwebsecpy en la carpeta *campaigns* del proyecto invi.sible.link. Para configurar los campaigns a mostrar en invi.sible.link consultar la última sección de este documento: "**Añadir más campaigns**"
+
 ## Deploy
 
 A continuación se describen los pasos para cargar los datos de campaigns y publicarlos a través de la api rest de storyteller.
