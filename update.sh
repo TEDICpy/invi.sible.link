@@ -13,9 +13,9 @@ export config=config/analyzerDevelopment.json
 export DEBUG=* 
 
 # Commands
-TZ=UTC DEBUG=* bin/queueMany.js 
-TZ=UTC amount=6 concurrency=3 npm run badger
-TZ=UTC amount=6 concurrency=3 npm run phantom
+$folder/bin/queueMany.js 
+amount=6 concurrency=3 npm run badger
+amount=6 concurrency=3 npm run phantom
 
 for i in $campaigns; do
   echo -e "Running badger for $i"
