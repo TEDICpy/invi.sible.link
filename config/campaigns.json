@@ -1,74 +1,16 @@
 { "campaigns": {
-    "chuptrex": [ {
-            "name": "clinics-MX",
-            "csv": "chuptrex/clinics-MX.csv" 
-        }, {
-            "name": "clinics-CL",
-            "csv": "chuptrex/clinics-CL.csv"
-        }, {
-            "name": "clinics-BR",
-            "csv": "chuptrex/clinics-BR.csv"
-        }, {
-            "name": "clinics-CO",
-            "csv": "chuptrex/clinics-CO.csv"
-        }
-    ],
-    "amtrex": [ { 
-            "name": "halal",
-            "csv": "amtrex/halal-list.csv"
-        }, {
-            "name": "culture",
-            "csv": "amtrex/culture-list.csv"
-        }, {
-            "name": "mosques",
-            "csv": "amtrex/mosques-list.csv"
-        }, {
-            "name": "travel",
-            "csv": "amtrex/travel-list.csv"
-        }
-    ],
-    "irantrex": [ {
-        "name": "irantrex",
-        "csv": "irantrex/iran1st.csv",
-        "communication": "irantrex/irantrex.json"
-    } ],
-    "itatopex": [ {
-        "name": "itatopex",
-        "csv": "itatopex/lista.csv",
-        "communication": "itatopex/itatopex.json"
-    } ],
-    "social-media": [ {
-        "name": "social-media",
-        "csv": "/dev/null"
-    } ],
-    "e18": [ {
-        "name": "e18",
-        "csv": "/dev/null"
-    } ],
-    "poland": [ {
-        "name": "poland",
-        "csv": "campaigns/fiftyshadesofpoland/list.csv"
-    } ],
-    "platforms": [ {
-        "name": "platforms",
-        "csv": "platforms/crowdfunding.csv"
-    } ],
-    "ngos": [ {
-        "name": "ngos",
-        "csv": "ngos/donation.csv"
-    } ],
     "gob": [
         {
         "name": "gob.brasil",
-        "csv": "gobwebsecpy/lista_brasil.csv"
+        "csv": "olpeCampaigns/lista_brasil.csv"
     }, {
         "name": "gob.colombia",
-        "csv": "gobwebsecpy/lista_colombia.csv"
+        "csv": "olpeCampaigns/lista_colombia.csv"
     }, {
         "name": "gob.chile",
-        "csv": "gobwebsecpy/lista_chile.csv"
+        "csv": "olpeCampaigns/lista_chile.csv"
     }, {
         "name": "gob.paraguay",
-        "csv": "gobwebsecpy/lista_paraguay.csv"
+        "csv": "olpeCampaigns/lista_paraguay.csv"
     } ]
 }}
