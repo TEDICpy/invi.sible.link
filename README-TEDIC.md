@@ -50,7 +50,7 @@ Por último, dejar corriendo **exposer** en esta terminal
     TZ=UTC config=config/analyzerDevelopment.json DEBUG=* bin/analyzePhantom.js --campaign gob.paraguay
 
 	#analyzeGroup
-    TZ=UTC config=config/analyzerDevelopment.json DEBUG=* bin/analyzeGroup.js --campaign gobwebsecpy
+    TZ=UTC config=config/analyzerDevelopment.json DEBUG=* bin/analyzeGroup.js --campaign gob.paraguay
 
 Por último, dejar corriendo **storyteller** en la terminal
 
