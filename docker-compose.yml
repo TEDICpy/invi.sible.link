@@ -1,36 +1,7 @@
-version: '2'
+mongodb:
+  image: mongo:latest
+  #env_file: nombredb.env
+  volumes:
+    - mongongodb:/data/db
+  net: "host"
 
-services:
-  db:
-    image: mongo:latest
-    volumes:
-      - invisibledata:/data/db
-  storyteller:
-    build:
-      context: .
-      dockerfile: Dockerfile-story
-    ports:
-      - 7000:7000
-    depends_on:
-      - db
-  vigile:
-    build:
-      context: .
-      dockerfile: Dockerfile-vigile
-    ports:
-      - 7200:7200
-    depends_on:
-      - db
-  exposer:
-    build:
-      context: .
-      dockerfile: Dockerfile-exposer
-    ports:
-      - 7300:7300
-    depends_on:
-      - db
-  #chopsticks:
-    # image:
-
-volumes:
-  invisibledata:
