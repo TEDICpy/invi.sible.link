@@ -1,4 +1,5 @@
 { "campaigns": {
+<<<<<<< HEAD
     "chuptrex": [ {
             "name": "clinics-MX",
             "csv": "chuptrex/clinics-MX.csv" 
@@ -60,5 +61,20 @@
     "gobwebsecpy": [ {
         "name": "gobwebsecpy",
         "csv": "gobwebsecpy/lista_paraguay.csv"
+=======
+    "gob": [
+        {
+        "name": "gob.brasil",
+        "csv": "olpeCampaigns/lista_brasil.csv"
+    }, {
+        "name": "gob.colombia",
+        "csv": "olpeCampaigns/lista_colombia.csv"
+    }, {
+        "name": "gob.chile",
+        "csv": "olpeCampaigns/lista_chile.csv"
+    }, {
+        "name": "gob.paraguay",
+        "csv": "olpeCampaigns/lista_paraguay.csv"
+>>>>>>> 5ca6fcd1cffd180183140afcab078d21b5f5f57b
     } ]
 }}
